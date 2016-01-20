@@ -1,0 +1,21 @@
+<ion-view title="Ingresar">
+    <ion-content scroll="false" padding="10" class="screendonofrio">
+    <div class="logoScreen">
+      <img src="img/logoDonofrioScreen.png" class="img-responsive center-block" alt="">
+    </div>
+    <div class="list list-inset">
+    	<form novalidate class="css-form" name="frmLogin">
+    		<label class="item item-input" ng-class="{'ng-invalid': !frmRegistro.txtUser.$valid, 'ng-valid': frmRegistro.txtUser.$valid}">
+			    <i class="icon ion-person placeholder-icon"></i>
+			    <input type="text" name="txtUser" id="txtUser" placeholder="Nombre de usuario" ng-model="userlogin.usuario" ng-minlengt="9" required>
+			</label>
+			<label class="item item-input" ng-class="{'ng-invalid': !frmRegistro.txtPass.$valid, 'ng-valid': frmRegistro.txtPass.$valid}">
+			    <i class="icon ion-locked placeholder-icon"></i>
+			    <input type="password" name="txtPass" id="txtPass" placeholder="Contraseña" ng-model="userlogin.pass" ng-minlengt="6" required>
+			</label>
+    	</form>
+	</div>
+	<a href="javascript:;" class="button button-block button-calm" ng-click="login(userlogin)">Iniciar sesión</a><br/>
+	<a href="javascript:;" ng-click="gotoRemenberPass()">Recuperar contraseña</a>
+  </ion-content>
+</ion-view>

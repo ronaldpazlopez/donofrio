@@ -1,0 +1,16 @@
+<ion-view title="Ingresar">
+    <ion-content scroll="false" padding="10" class="screendonofrio">
+    <div class="logoScreen">
+      <img src="img/logoDonofrioScreen.png" class="img-responsive center-block" alt="">
+    </div>
+    <div class="list list-inset">
+    	<form novalidate class="css-form" name="frmLogin">
+    		<label class="item item-input" ng-class="{'ng-invalid': !frmRegistro.txtUser.$valid, 'ng-valid': frmRegistro.txtUser.$valid}">
+			    <i class="icon ion-person placeholder-icon"></i>
+			    <input type="text" name="txtUser" id="txtUser" placeholder="Correo electrónico" ng-model="userlogin.usuario" ng-minlengt="9" required>
+			</label>
+    	</form>
+	</div>
+	<a href="javascript:;" class="button button-block button-calm" ng-click="changeInit(userlogin)">Enviar código</a><br/>
+  </ion-content>
+</ion-view>
